@@ -10,7 +10,7 @@ const Cardio = () => {
   const [listMembership, setListMembership] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:8000/api/membership").then((response) => {
+    Axios.get("https://pumpkin-shortcake-86885.herokuapp.com/api/membership").then((response) => {
       setListMembership(response.data.membership);
     });
   }, []);

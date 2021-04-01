@@ -52,7 +52,7 @@ const PtMembers = () => {
 
   useEffect(async () => {
     await Axios.get(
-      `http://localhost:8000/api/instructor/${localStorage.getItem("idPt")}`,
+      `https://pumpkin-shortcake-86885.herokuapp.com/api/instructor/${localStorage.getItem("idPt")}`,
       {
         headers: {
           "content-type": "multipart/form-data",

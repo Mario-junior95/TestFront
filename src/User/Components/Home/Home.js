@@ -37,7 +37,7 @@ const Home = () => {
   };
 
   useEffect(async () => {
-    await Axios.get("http://localhost:8000/api/home", {
+    await Axios.get("https://pumpkin-shortcake-86885.herokuapp.com/api/home", {
       headers: {
         "content-type": "multipart/form-data",
         Authorization: "Bearer " + localStorage.getItem("token"),
@@ -155,7 +155,7 @@ const Home = () => {
                               data-aos-offset="0"
                             >
                               <source
-                                src={`http://localhost:8000/storage/${val.image}`}
+                                src={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${val.image}`}
                                 type="video/mp4"
                               />
                               <source src="movie.ogg" type="video/ogg" />
@@ -221,7 +221,7 @@ const Home = () => {
                               data-aos-offset="0"
                             >
                               <source
-                                src={`http://localhost:8000/storage/${val.image}`}
+                                src={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${val.image}`}
                                 type="video/mp4"
                               />
                               <source src="movie.ogg" type="video/ogg" />

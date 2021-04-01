@@ -43,7 +43,7 @@ const EditHomeRodal = (props) => {
     data.append("title", title);
     try {
       await Axios.post(
-        `http://localhost:8000/api/home/${props.val.id}?_method=PUT `,
+        `https://pumpkin-shortcake-86885.herokuapp.com/api/home/${props.val.id}?_method=PUT `,
         data,
         {
           headers: {

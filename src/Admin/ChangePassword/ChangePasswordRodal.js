@@ -25,7 +25,7 @@ const ChangePasswordRodal = (props) => {
 
     try {
       await Axios.post(
-        `http://localhost:8000/api/updatePassword/${localStorage.getItem(
+        `https://pumpkin-shortcake-86885.herokuapp.com/api/updatePassword/${localStorage.getItem(
           "idAdmin"
         )}?_method=PUT `,
         data,

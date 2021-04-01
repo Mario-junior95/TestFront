@@ -34,7 +34,7 @@ const EditInstructorRodal = (props) => {
     data.append("end", endTime);
     try {
       await Axios.post(
-        `http://localhost:8000/api/time/${props.val.id}?_method=PUT `,
+        `https://pumpkin-shortcake-86885.herokuapp.com/api/time/${props.val.id}?_method=PUT `,
         data,
         {
           headers: {

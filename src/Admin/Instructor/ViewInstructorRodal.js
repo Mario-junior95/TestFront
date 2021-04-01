@@ -21,7 +21,7 @@ const ViewInstructorRodal = (props) => {
           View Instructor Info
         </h1>
         <img
-          src={`http://localhost:8000/storage/${props.val.image}`}
+          src={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${props.val.image}`}
           style={{ width: "50%", margin: "0 21%" }}
           alt="error_instructor_img"
         />

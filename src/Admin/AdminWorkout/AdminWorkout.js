@@ -57,7 +57,7 @@ const AdminInfo = () => {
   };
 
   useEffect(async () => {
-    await Axios.get("http://localhost:8000/api/workout", {
+    await Axios.get("https://pumpkin-shortcake-86885.herokuapp.com/api/workout", {
       headers: {
         "content-type": "multipart/form-data",
         Authorization: "Bearer " + localStorage.getItem("tokens"),

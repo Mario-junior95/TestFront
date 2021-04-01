@@ -35,7 +35,7 @@ const EditFaqRodal = (props) => {
     data.append("answer", answer);
     try {
       await Axios.post(
-        `http://localhost:8000/api/faq/${props.val.id}?_method=PUT `,
+        `https://pumpkin-shortcake-86885.herokuapp.com/api/faq/${props.val.id}?_method=PUT `,
         data,
         {
           headers: {

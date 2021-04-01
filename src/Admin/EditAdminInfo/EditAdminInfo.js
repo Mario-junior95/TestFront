@@ -11,7 +11,7 @@ const EditAdminInfo = (props) => {
 
   useEffect(async () => {
     await Axios.get(
-      `http://localhost:8000/api/admin/${localStorage.getItem("idAdmin")}`,
+      `https://pumpkin-shortcake-86885.herokuapp.com/api/admin/${localStorage.getItem("idAdmin")}`,
       {
         headers: {
           "content-type": "multipart/form-data",
@@ -67,7 +67,7 @@ const EditAdminInfo = (props) => {
     data.append("email", email);
     try {
       await Axios.post(
-        `http://localhost:8000/api/admin/${localStorage.getItem(
+        `https://pumpkin-shortcake-86885.herokuapp.com/api/admin/${localStorage.getItem(
           "idAdmin"
         )}?_method=PUT `,
         data,

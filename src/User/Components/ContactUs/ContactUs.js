@@ -45,7 +45,7 @@ const ContactUs = () => {
     data.append("message", message);
 
     try {
-      await Axios.post("http://localhost:8000/api/contactus", data, {
+      await Axios.post("https://pumpkin-shortcake-86885.herokuapp.com/api/contactus", data, {
         headers: {
           "content-type": "multipart/form-data",
           Authorization: "Bearer " + localStorage.getItem("token"),

@@ -28,7 +28,7 @@ const PtLogin = () => {
   const HandleLogin = async (e) => {
     e.preventDefault();
     try {
-      await Axios.post("http://localhost:8000/api/instructor-login", {
+      await Axios.post("https://pumpkin-shortcake-86885.herokuapp.com/api/instructor-login", {
         username: username,
         password: password,
       }).then((response) => {

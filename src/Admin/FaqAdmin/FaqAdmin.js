@@ -61,7 +61,7 @@ const FaqAdmin = () => {
   };
 
   useEffect(async () => {
-    await Axios.get("http://localhost:8000/api/faq", {
+    await Axios.get("https://pumpkin-shortcake-86885.herokuapp.com/api/faq", {
       headers: {
         "content-type": "multipart/form-data",
         Authorization: "Bearer " + localStorage.getItem("tokens"),
@@ -121,7 +121,7 @@ const FaqAdmin = () => {
 
   const deleteAdmin = async (id) => {
     try {
-      await Axios.delete(`http://localhost:8000/api/faq/${id} `, {
+      await Axios.delete(`https://pumpkin-shortcake-86885.herokuapp.com/api/faq/${id} `, {
         headers: {
           Accept: "application/json",
           "content-type": "multipart/form-data",

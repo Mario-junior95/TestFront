@@ -56,7 +56,7 @@ const AddAdminShopRodal = (props) => {
     data.append("type", type);
 
     try {
-      await Axios.post("http://localhost:8000/api/item", data, {
+      await Axios.post("https://pumpkin-shortcake-86885.herokuapp.com/api/item", data, {
         headers: {
           "content-type": "multipart/form-data",
           Authorization: "Bearer " + localStorage.getItem("tokens"),

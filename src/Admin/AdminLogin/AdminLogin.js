@@ -23,7 +23,7 @@ const AdminLogin = () => {
   const HandleLogin = async (e) => {
     e.preventDefault();
     try {
-      await Axios.post("http://localhost:8000/api/admin-login", {
+      await Axios.post("https://pumpkin-shortcake-86885.herokuapp.com/api/admin-login", {
         username: username,
         password: password,
       }).then((response) => {

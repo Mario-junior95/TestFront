@@ -49,7 +49,7 @@ const WorkWithUsModal = (props) => {
     data.append("description", message);
 
     try {
-      await Axios.post("http://localhost:8000/api/workwithus", data, {
+      await Axios.post("https://pumpkin-shortcake-86885.herokuapp.com/api/workwithus", data, {
         headers: {
           "content-type": "multipart/form-data",
           Accept:'application/json',

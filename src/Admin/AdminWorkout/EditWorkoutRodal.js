@@ -39,7 +39,7 @@ const EditWorkoutRodal = (props) => {
     data.append("image", image);
     try {
       await Axios.post(
-        `http://localhost:8000/api/workout/${props.val.id}?_method=PUT `,
+        `https://pumpkin-shortcake-86885.herokuapp.com/api/workout/${props.val.id}?_method=PUT `,
         data,
         {
           headers: {

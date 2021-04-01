@@ -28,7 +28,7 @@ const SuperAdminLogin = () => {
   const HandleLogin = async (e) => {
     e.preventDefault();
     try {
-      await Axios.post("http://localhost:8000/api/superadmin-login", {
+      await Axios.post("https://pumpkin-shortcake-86885.herokuapp.com/api/superadmin-login", {
         username: username,
         password: password,
       }).then((response) => {

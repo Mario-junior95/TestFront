@@ -85,7 +85,7 @@ const AddInstructorRodal = (props) => {
     data.append("username", userName);
     data.append("password", password);
     try {
-      await Axios.post("http://localhost:8000/api/instructor", data, {
+      await Axios.post("https://pumpkin-shortcake-86885.herokuapp.com/api/instructor", data, {
         headers: {
           "content-type": "multipart/form-data",
           Authorization: "Bearer " + localStorage.getItem("tokens"),

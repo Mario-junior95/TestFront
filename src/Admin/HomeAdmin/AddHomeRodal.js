@@ -51,7 +51,7 @@ const AddHomeRodal = (props) => {
     data.append("description", description);
     data.append("image", image);
     try {
-      await Axios.post("http://localhost:8000/api/home", data, {
+      await Axios.post("https://pumpkin-shortcake-86885.herokuapp.com/api/home", data, {
         headers: {
           "content-type": "multipart/form-data",
           Authorization: "Bearer " + localStorage.getItem("tokens"),

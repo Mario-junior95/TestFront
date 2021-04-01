@@ -22,7 +22,7 @@ const ViewBuyItemsRodal = (props) => {
   const [listShop, setListShop] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:8000/api/shop").then((response) => {
+    Axios.get("https://pumpkin-shortcake-86885.herokuapp.com/api/shop").then((response) => {
       setListShop(response.data.shop);
       // console.log(response.data.shop);
     });

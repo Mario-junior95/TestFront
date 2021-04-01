@@ -21,7 +21,7 @@ const ViewAdminShopRodal = (props) => {
           View Item Info
         </h1>
         <img
-          src={`http://localhost:8000/storage/${props.val.image}`}
+          src={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${props.val.image}`}
           style={{ width: "20%", margin: "0 40%" }}
           alt="error_instructor_img"
         />

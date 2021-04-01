@@ -47,7 +47,7 @@ const EditMemberShipType = (props) => {
     data.append("amount", amount);
     try {
       await Axios.post(
-        `http://localhost:8000/api/membership/${props.val.id}?_method=PUT `,
+        `https://pumpkin-shortcake-86885.herokuapp.com/api/membership/${props.val.id}?_method=PUT `,
         data,
         {
           headers: {

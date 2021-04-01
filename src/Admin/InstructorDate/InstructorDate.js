@@ -71,7 +71,7 @@ const InstructorDate = () => {
   };
 
   useEffect(async () => {
-    await Axios.get("http://localhost:8000/api/time", {
+    await Axios.get("https://pumpkin-shortcake-86885.herokuapp.comapi/time", {
       headers: {
         "content-type": "multipart/form-data",
         Authorization: "Bearer " + localStorage.getItem("tokens"),
@@ -123,7 +123,7 @@ const InstructorDate = () => {
 
   const deleteAdmin = async (id) => {
     try {
-      await Axios.delete(`http://localhost:8000/api/time/${id} `, {
+      await Axios.delete(`https://pumpkin-shortcake-86885.herokuapp.comapi/time/${id} `, {
         headers: {
           Accept: "application/json",
           "content-type": "multipart/form-data",

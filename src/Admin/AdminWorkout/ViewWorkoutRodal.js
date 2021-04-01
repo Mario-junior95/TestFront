@@ -24,7 +24,7 @@ const ViewWorkoutRodal = (props) => {
           <h1 className="Rodal_Title" style={{ textAlign: "center" }}>
             View Workout Info
           </h1>
-          <img src={`http://localhost:8000/storage/${props.val.image}`} style={{ width: '50%',
+          <img src={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${props.val.image}`} style={{ width: '50%',
     margin: '0 21%'}} alt="error_workout_img" />
           <Typography style={{ textAlign: "center" }}>
             {props.val.description}

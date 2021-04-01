@@ -55,7 +55,7 @@ const EditInstructorRodal = (props) => {
     data.append("price", price);
     try {
       await Axios.post(
-        `http://localhost:8000/api/instructor/${props.val.id}?_method=PUT `,
+        `https://pumpkin-shortcake-86885.herokuapp.com/api/instructor/${props.val.id}?_method=PUT `,
         data,
         {
           headers: {

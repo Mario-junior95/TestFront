@@ -17,7 +17,7 @@ const Shop = () => {
   const [type, setType] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:8000/api/item").then((response) => {
+    Axios.get("https://pumpkin-shortcake-86885.herokuapp.com/api/item").then((response) => {
       setListShop(response.data.item);
     });
   }, []);
@@ -172,7 +172,7 @@ const Shop = () => {
 
                           try {
                             await Axios.post(
-                              "http://localhost:8000/api/shop",
+                              "https://pumpkin-shortcake-86885.herokuapp.com/api/shop",
                               data,
                               {
                                 headers: {
@@ -208,7 +208,7 @@ const Shop = () => {
                               <div className="card " {...card}>
                                 <img
                                   className="shoe"
-                                  src={`http://localhost:8000/storage/${val.image}`}
+                                  src={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${val.image}`}
                                 />
                                 <div className="content_item">
                                   <p

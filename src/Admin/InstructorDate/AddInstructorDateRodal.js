@@ -44,7 +44,7 @@ const AddInstructorDateRodal = (props) => {
     data.append("end", timeEnd);
 
     try {
-      await Axios.post("http://localhost:8000/api/time", data, {
+      await Axios.post("https://pumpkin-shortcake-86885.herokuapp.com/api/time", data, {
         headers: {
           "content-type": "multipart/form-data",
           Authorization: "Bearer " + localStorage.getItem("tokens"),

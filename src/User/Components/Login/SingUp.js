@@ -84,7 +84,7 @@ const SingUp = () => {
     data.append("membership_id", memberShipId);
 
     try {
-      await Axios.post("http://localhost:8000/api/register", data).then(
+      await Axios.post("https://pumpkin-shortcake-86885.herokuapp.com/api/register", data).then(
         (response) => {
           setListMember(response.data);
           localStorage.setItem("idUser", response.data.user.id);
@@ -132,7 +132,7 @@ const SingUp = () => {
   const [membership, setMemberShip] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:8000/api/membership").then((response) => {
+    Axios.get("https://pumpkin-shortcake-86885.herokuapp.com/api/membership").then((response) => {
       setMemberShip(response.data.membership);
     });
   }, []);

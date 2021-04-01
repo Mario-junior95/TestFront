@@ -30,7 +30,7 @@ const WorkOutPlan = () => {
   const [workout, setWorkout] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:8000/api/workout").then((response) => {
+    Axios.get("https://pumpkin-shortcake-86885.herokuapp.com/api/workout").then((response) => {
       setWorkout(response.data.workout);
     });
   }, []);
@@ -67,7 +67,7 @@ const WorkOutPlan = () => {
                               data-aos-easing="ease-in-back"
                               data-aos-delay="400"
                               data-aos-offset="0"
-                              src={`http://localhost:8000/storage/${val.image}`}
+                              src={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${val.image}`}
                               style={{ width: "45vw", margin: "20px" }}
                             />
                             <span
@@ -113,7 +113,7 @@ const WorkOutPlan = () => {
                             key={val.id}
                           >
                             <img
-                              src={`http://localhost:8000/storage/${val.image}`}
+                              src={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${val.image}`}
                               style={{ width: "45vw", margin: "20px" }}
                             />
                             <span
@@ -167,7 +167,7 @@ const WorkOutPlan = () => {
                               Aerobic
                             </span>
                             <img
-                              src={`http://localhost:8000/storage/${val.image}`}
+                              src={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${val.image}`}
                               style={{ width: "45vw", margin: "20px" }}
                             />
                             <div
@@ -214,7 +214,7 @@ const WorkOutPlan = () => {
                               CARDIO
                             </span>
                             <img
-                              src={`http://localhost:8000/storage/${val.image}`}
+                              src={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${val.image}`}
                               style={{ width: "44vw", margin: "20px" }}
                             />
 
@@ -262,7 +262,7 @@ const WorkOutPlan = () => {
                               ZUMBA
                             </span>
                             <img
-                              src={`http://localhost:8000/storage/${val.image}`}
+                              src={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${val.image}`}
                               style={{ width: "45vw", margin: "20px" }}
                             />
                             <div
@@ -310,7 +310,7 @@ const WorkOutPlan = () => {
                               POOL
                             </span>
                             <img
-                              src={`http://localhost:8000/storage/${val.image}`}
+                              src={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${val.image}`}
                               style={{ width: "45vw", margin: "20px" }}
                             />
                             <div

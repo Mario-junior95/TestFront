@@ -33,7 +33,7 @@ const Coaches = () => {
   const [listInstructor, setListInstructor] = useState([]);
 
   useEffect(async () => {
-    await Axios.get("http://localhost:8000/api/instructor").then((response) => {
+    await Axios.get("https://pumpkin-shortcake-86885.herokuapp.com/api/instructor").then((response) => {
       setListInstructor(response.data.instructor);
       console.log(response.data.instructor);
     });
@@ -103,7 +103,7 @@ const Coaches = () => {
                               data-aos-easing="ease-in-back"
                               data-aos-delay="400"
                               data-aos-offset="0"
-                              src={`http://localhost:8000/storage/${val.image}`}
+                              src={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${val.image}`}
                               alt="error_coach_image"
                               style={{ width: "45vw", margin: "20px" }}
                             />
@@ -180,7 +180,7 @@ const Coaches = () => {
                             }}
                           >
                             <img
-                              src={`http://localhost:8000/storage/${val.image}`}
+                              src={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${val.image}`}
                               alt="error_coach_image"
                               style={{ width: "45vw", margin: "20px" }}
                               data-aos="fade-zoom-in"

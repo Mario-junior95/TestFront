@@ -21,7 +21,7 @@ const ViewWorkWithUsRodal = (props) => {
           View Message Info
         </h1>
         <a
-          href={`http://localhost:8000/storage/${props.val.image}`}
+          href={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${props.val.image}`}
           target="_blank"
           style={{ marginLeft: "17.6vw", color: "black" }}
         >

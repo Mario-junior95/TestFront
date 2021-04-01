@@ -60,7 +60,7 @@ const AdminShop = () => {
   };
 
   useEffect(async () => {
-    await Axios.get("http://localhost:8000/api/item", {
+    await Axios.get("https://pumpkin-shortcake-86885.herokuapp.com/api/item", {
       headers: {
         "content-type": "multipart/form-data",
         Authorization: "Bearer " + localStorage.getItem("tokens"),
@@ -139,7 +139,7 @@ const AdminShop = () => {
 
   const deleteAdmin = async (id) => {
     try {
-      await Axios.delete(`http://localhost:8000/api/item/${id} `, {
+      await Axios.delete(`https://pumpkin-shortcake-86885.herokuapp.com/api/item/${id} `, {
         headers: {
           Accept: "application/json",
           "content-type": "multipart/form-data",

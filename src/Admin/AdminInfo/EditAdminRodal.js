@@ -40,7 +40,7 @@ const EditAdminRodal = (props) => {
     data.append("email", email);
     try {
       await Axios.post(
-        `http://localhost:8000/api/admin/${props.val.id}?_method=PUT `,
+        `https://pumpkin-shortcake-86885.herokuapp.com/api/admin/${props.val.id}?_method=PUT `,
         data,
         {
           headers: {

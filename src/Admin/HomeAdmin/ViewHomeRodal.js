@@ -29,7 +29,7 @@ const ViewHomeRodal = (props) => {
             autoPlay
           >
             <source
-              src={`http://localhost:8000/storage/${props.val.image}`}
+              src={`https://pumpkin-shortcake-86885.herokuapp.com/storage/${props.val.image}`}
               type="video/mp4"
             />
             <source src="movie.ogg" type="video/ogg" />

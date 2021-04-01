@@ -58,7 +58,7 @@ const AddAdminRodal = (props) => {
     data.append("username", userName);
     data.append("password", password);
     try {
-      await Axios.post("http://localhost:8000/api/admin", data, {
+      await Axios.post("https://pumpkin-shortcake-86885.herokuapp.com/api/admin", data, {
         headers: {
           "content-type": "multipart/form-data",
           Authorization: "Bearer " + localStorage.getItem("superAdminToken"),

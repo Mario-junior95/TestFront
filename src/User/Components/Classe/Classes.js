@@ -22,7 +22,7 @@ const Classes = () => {
 
   useEffect(async () => {
     await Axios.get(
-      `http://localhost:8000/api/user/${localStorage.getItem("idUser")}`,
+      `https://pumpkin-shortcake-86885.herokuapp.com/api/user/${localStorage.getItem("idUser")}`,
       {
         headers: {
           "content-type": "multipart/form-data",

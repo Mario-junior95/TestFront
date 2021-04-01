@@ -15,7 +15,7 @@ const Faq = () => {
   const [listFaq, setListFaq] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:8000/api/faq").then((response) => {
+    Axios.get("https://pumpkin-shortcake-86885.herokuapp.com/api/faq").then((response) => {
       setListFaq(response.data.faq);
     });
   }, []);

@@ -22,7 +22,7 @@ const ModalCoaches = (props) => {
   const [error, setError] = useState("");
 
   const Time = () => {
-    Axios.get("http://localhost:8000/api/time").then((response) => {
+    Axios.get("https://pumpkin-shortcake-86885.herokuapp.com/api/time").then((response) => {
       setListTime(response.data.time);
       setTimeMessage("Pick A Time");
       console.log(value);
@@ -82,7 +82,7 @@ const ModalCoaches = (props) => {
 
                   try {
                     await Axios.post(
-                      "http://localhost:8000/api/userIntsructorTime",
+                      "https://pumpkin-shortcake-86885.herokuapp.com/api/userIntsructorTime",
                       data,
                       {
                         headers: {
