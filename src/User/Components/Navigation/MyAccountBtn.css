@@ -1,0 +1,61 @@
+.container_button {
+  top: 10px;
+  /* width: 400px; */
+  height: 6vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 10vw;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid transparent;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+.btn > span {
+  color: white;
+  font-size: 1.01em;
+  font-family: Termina, Impact, Arial Black, sans-serif;
+  text-transform: uppercase;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  /* background: white; */
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.logout {
+  position: fixed;
+  /* right: 1vw; */
+  right: 14vw;
+  top: 1.53vw;
+  margin-left: 100px;
+}

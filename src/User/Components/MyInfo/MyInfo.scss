@@ -1,0 +1,208 @@
+.arrow {
+  background: #fff;
+  height: 3px;
+  width: 30px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+
+  &:before,
+  &:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    height: 3px;
+    width: 15px;
+  }
+
+  &:before {
+    right: -3px;
+    bottom: -4px;
+    transform: rotate(-45deg);
+  }
+
+  &:after {
+    right: -3px;
+    top: -4px;
+    transform: rotate(45deg);
+  }
+}
+
+#animation3 {
+  & + label > .arrow {
+    &:before {
+      animation: animation-3-before-reverse 1s ease 0s 1 alternate both;
+    }
+
+    &:after {
+      animation: animation-3-after-reverse 1s ease 0s 1 alternate both;
+    }
+  }
+
+  &:checked {
+    & + label > .arrow {
+      &:before {
+        animation: animation-3-before 1s ease 0s 1 alternate both;
+      }
+
+      &:after {
+        animation: animation-3-after 1s ease 0s 1 alternate both;
+      }
+    }
+  }
+}
+
+@keyframes animation-3-after {
+  0% {
+    right: -3px;
+    top: -4px;
+    transform: rotate(45deg);
+    background: blue;
+  }
+
+  25% {
+    width: 3px;
+    border-radius: 50%;
+    top: 20px;
+    left: 15px;
+  }
+
+  75% {
+    width: 3px;
+    border-radius: 50%;
+    top: -20px;
+    left: 15px;
+  }
+
+  100% {
+    left: -3px;
+    bottom: -4px;
+    transform: rotate(135deg);
+    height: 3px;
+    width: 15px;
+    background: #fff;
+  }
+}
+@keyframes animation-3-before {
+  0% {
+    right: -3px;
+    top: -4px;
+    transform: rotate(45deg);
+    background: red;
+  }
+
+  25% {
+    width: 3px;
+    border-radius: 50%;
+    top: -20px;
+    left: 15px;
+  }
+
+  75% {
+    width: 3px;
+    border-radius: 50%;
+    top: 20px;
+    left: 15px;
+  }
+
+  100% {
+    left: -3px;
+    bottom: -4px;
+    transform: rotate(-135deg);
+    height: 3px;
+    width: 15px;
+    background: #fff;
+  }
+}
+@keyframes animation-3-after-reverse {
+  0% {
+    left: -3px;
+    bottom: -4px;
+    transform: rotate(135deg);
+    height: 3px;
+    width: 15px;
+    background: #fff;
+  }
+
+  50% {
+    width: 3px;
+    border-radius: 50%;
+    top: -20px;
+    left: 15px;
+  }
+
+  100% {
+    right: -3px;
+    top: -4px;
+    transform: rotate(45deg);
+  }
+}
+@keyframes animation-3-before-reverse {
+  0% {
+    left: -3px;
+    bottom: -4px;
+    transform: rotate(-135deg);
+    height: 3px;
+    width: 15px;
+    background: #fff;
+  }
+
+  50% {
+    width: 3px;
+    border-radius: 50%;
+    bottom: -20px;
+    left: 15px;
+  }
+
+  100% {
+    right: -3px;
+    bottom: -4px;
+    transform: rotate(-45deg);
+  }
+}
+
+#animation3[type="checkbox"] {
+  display: none;
+}
+
+.arrows {
+  position: fixed;
+  left: 42.1vw;
+  top: 8.8vw;
+  z-index: 1;
+}
+
+.sideBox > a {
+  color: white;
+}
+
+// .blockEditInfo {
+//   margin: 11vw 0 11vw 25vw;
+// }
+
+.blockEditInfo {
+  margin: 11vw 0 11vw 23.9vw;
+  position: relative;
+  z-index: 3;
+}
+
+@media screen and (max-width: 480px) {
+  .imageEdit {
+    display: none;
+  }
+
+  .blockEditInfo {
+    margin: 22vw 0 3vw -46.9vw;
+    position: relative;
+    z-index: 3;
+    overflow-x: hidden;
+  }
+
+  .gender > label > input {
+    width: 23vw !important;
+  }
+
+  .arrows {
+    display: none;
+  }
+}

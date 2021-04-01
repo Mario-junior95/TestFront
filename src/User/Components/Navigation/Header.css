@@ -1,0 +1,46 @@
+header {
+  position: fixed !important;
+}
+
+/*    Responsive SideNav*/
+
+@media only screen and (max-width: 480px) {
+  .inner-header > .logo > a > img {
+    margin-left: -35vw;
+  }
+  .menu-layer {
+    width: 267vw;
+  }
+
+  header .hamburger-menu .menu-layer .wrapper .copyright {
+    position: fixed;
+    top: 121vw;
+    left: 100vw;
+    font-size: 3vw;
+    color: black !important;
+  }
+
+  header .hamburger-menu .menu-layer .wrapper .menu-links nav ul li a {
+    font-size: 13vw;
+  }
+
+  [data-css-1y6sda6]:hover,
+  [data-css-1iqcdwp]:hover,
+  [data-css-1gycku5]:hover {
+    background: transparent;
+    color: black !important;
+  }
+
+  .container_button {
+    top: 40px;
+    height: 6vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 118vw;
+  }
+
+
+}
+

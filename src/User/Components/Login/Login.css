@@ -1,0 +1,185 @@
+h1 {
+  text-transform: uppercase;
+  font-family: Impact, Arial black, sans-serif;
+}
+
+h2 {
+  font-size: 1.1em;
+  font-family: Impact, sans-serif;
+}
+
+.leftSide,
+.rightSide {
+  border-left: 1px white solid;
+  padding: 0 2vw;
+  height: 30vw;
+}
+
+.block {
+  display: grid;
+  grid-template-columns: 60% 100%;
+  width: 75vw;
+  margin-top: 17vw;
+}
+/* form design */
+
+label {
+  display: block;
+  letter-spacing: 4px;
+  padding-top: 30px;
+}
+
+/* animation for the text to float up */
+
+label .label-text {
+  color: gray;
+  cursor: text;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  /* -moz-transform: translateY(-34px);
+  -ms-transform: translateY(-34px);
+  -webkit-transform: translateY(-34px);
+  transform: translateY(-34px); */
+  transition: all 0.3s;
+  letter-spacing: 0;
+}
+/* remove the input box styling */
+label input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: 0;
+  padding: 5px 10px;
+  transition: all 0.3s;
+  width: 25vw;
+}
+
+/* once you click in the input the input width box animates */
+
+label input:focus {
+  width: 30vw;
+}
+
+/* the text floats up and turns white */
+
+label input:focus + .label-text {
+  color: #f0f0f0;
+  font-size: 13px;
+  margin-top: 10px;
+  /* -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px); */
+}
+
+/**the text floats up during form validation*/
+
+label input:valid + .label-text {
+  font-size: 13px;
+  /* -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px ); */
+}
+
+/* button styling */
+
+.btnLogin {
+  /* position: relative; */
+  background: transparent;
+  color: #f0f0f0;
+  border: 2px solid #f0f0f0;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 13px 6vw;
+  margin-top: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  font-family: Impact, Arial black, sans-serif;
+  width: 17em;
+}
+
+.btnLogin:hover,
+.btnLogin:focus {
+  background-color: white;
+  color: black;
+}
+
+/*    SignUp section      */
+
+.blockSignUp {
+  width: 75vw;
+  margin: 17vw 0 10vw 0;
+}
+
+.SignUpSide {
+  border-left: 1px white solid;
+  padding: 0 2vw;
+}
+
+.gender {
+  display: flex;
+}
+
+.gender > label > input {
+  width: 10vw;
+}
+
+.memberType {
+  width: 27vw;
+  padding: 0.2vw;
+  margin: 13px 0;
+  background: transparent;
+  color: white;
+  border: 2px white solid;
+  font-size: 1.1em;
+  font-family: Impact, sans-serif;
+}
+
+.memberType option {
+  background-color: gray;
+}
+
+[type="date"] {
+  border: 1px white solid;
+  margin: 13px 0;
+}
+
+.LoginSection {
+  background-color: black !important;
+  height: 49vw;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 480px) {
+  .LoginSection{
+    height:166vw !important;
+    /* overflow: visible; */
+    
+  }
+
+  .block{
+    display: flex;
+    flex-direction: column;
+  }
+  .leftSide{
+    height: 89vw !important;
+    margin-left: -46.5vw !important;
+  }
+  .rightSide{
+    margin-left: -46.5vw !important;
+    height: 60vw !important;
+  }
+  
+  label input{
+    width: 68vw !important;
+  }
+}

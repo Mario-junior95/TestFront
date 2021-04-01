@@ -1,0 +1,42 @@
+.block_userAccount {
+  margin-top: 10vw;
+  width: 75vw;
+}
+
+.block_userAccount > a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.01em;
+  padding: 0 10px;
+  font-family: Termina, Impact, Arial Black, sans-serif;
+}
+
+.block_userAccount > a:hover {
+  color: gray;
+}
+
+@media screen and (max-width: 480px) {
+  .block_userAccount {
+    margin-top: 39vw;
+    margin-left: -17vw;
+    width: 101vw;
+  }
+
+  .gender_male,
+  .gender_female {
+    display: none;
+  }
+
+  .sideBox {
+    height: 80vw !important;
+    margin-left: -15vw;
+  }
+
+  .logout {
+    position: fixed;
+    right: 19vw;
+    top: 5vw;
+    margin-left: 100px;
+  }
+}

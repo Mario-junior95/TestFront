@@ -1,0 +1,56 @@
+.hover > a:hover {
+  color: gray !important;
+}
+
+.btnFooter {
+  background: transparent;
+  color: #f0f0f0;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.4s;
+  font-family: Impact, Arial black, sans-serif;
+  border: none;
+  appearance: none;
+}
+
+.btnFooter:hover {
+  color: gray !important;
+  border: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer_section {
+    display: flex;
+    margin-left: 3vw;
+    padding-bottom: 2vw;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+    height: 40vw;
+  }
+
+  .borderFooter,
+  .footerImg {
+    display: none;
+  }
+
+  .border {
+    border: transparent !important;
+  }
+
+  .copyrights {
+    display: flex !important;
+    flex-direction: row;
+    font-size: 4vw;
+    justify-content: baseline !important;
+    margin-left: 5vw !important;
+    margin-top: 11vw !important;
+  }
+
+  .myName {
+    font-size: 4vw !important;
+    padding: 0 8px !important;
+  }
+}

@@ -1,0 +1,243 @@
+a {
+  text-decoration: none;
+}
+.react-calendar {
+  width: auto !important;
+}
+/* modal */
+#modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+}
+#modal .modal-bg {
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#modal .modal-bg .modal-cont {
+  position: relative;
+  background: #fff;
+  /* padding: 20px; */
+  padding: 16px 20px 25px 20px;
+  max-width: 500px;
+  display: inline-block;
+}
+#modal .modal-bg .modal-cont h2 {
+  position: relative;
+  font-size: 30px;
+  margin: 0;
+}
+#modal .modal-bg .modal-cont p {
+  position: relative;
+  font-size: 18px;
+}
+#modal .modal-bg .modal-cont .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  padding: 10px;
+  background: #000;
+  border-radius: 50%;
+}
+#modal .modal-bg .modal-cont .close svg {
+  width: -1px !important;
+  fill: #fff;
+  vertical-align: top;
+}
+
+#modal.five {
+  transform: scale(1);
+  position: fixed;
+  z-index: 1;
+}
+#modal.five .modal-bg {
+  background: rgba(0, 0, 0, 0);
+  animation: fadeIn 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+#modal.five .modal-bg .modal-cont {
+  border-radius: 75px;
+  height: 75px;
+  width: 75px;
+  overflow: hidden;
+  animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+#modal.five .modal-bg .modal-cont h2,
+#modal.five .modal-bg .modal-cont p {
+  opacity: 0;
+  animation: modalContentFadeIn 0.5s 1.4s cubic-bezier(0.165, 0.85, 0.44, 1)
+    forwards;
+}
+#modal.five .modal-bg .modal-cont .close {
+  opacity: 0;
+  animation: closeFadeIn 0.5s 1.4s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+
+#modal.out.five {
+  animation: slowFade 0.5s 1.5s linear forwards;
+}
+#modal.out.five .modal-bg {
+  background: rgba(0, 0, 0, 0.7);
+  animation: fadeToRed 2s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+#modal.out.five .modal-bg .modal-cont {
+  border-radius: 3px;
+  height: 200px;
+  height: 23vw !important;
+
+  width: 450px;
+  animation: killShot 1s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+#modal.out.five .modal-bg .modal-cont h2,
+#modal.out.five .modal-bg .modal-cont p {
+  animation: modalContentFadeOut 0.5s 0.5s cubic-bezier(0.165, 0.85, 0.44, 1)
+    forwards;
+}
+#modal.out.five .modal-bg .modal-cont .close {
+  animation: closeFadeOut 0.5s 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+
+.btnSession {
+  /* position: relative; */
+  background: transparent;
+  color: black;
+  border: 2px solid black;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: -5px 6vw !important;
+  margin-top: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.4s;
+  font-family: Impact, Arial black, sans-serif;
+  width: 13em !important;
+}
+
+.btnSession:hover,
+.btnSession:focus {
+  background-color: black;
+  color: white;
+}
+
+@keyframes slowFade {
+  0% {
+    opacity: 1;
+  }
+  99.9% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+/* @keyframes fadeToRed {
+  0% {
+    box-shadow: inset 0 0 0 rgba(201, 24, 24, 0.8);
+  }
+  100% {
+    box-shadow: inset 0 2000px 0 rgba(201, 24, 24, 0.8);
+  }
+} */
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0 !important;
+  color: black;
+}
+
+@keyframes bondJamesBond {
+  0% {
+    transform: translatex(1000px);
+  }
+  80% {
+    transform: translatex(0px);
+    border-radius: 75px;
+    height: 75px;
+    width: 75px;
+  }
+  90% {
+    border-radius: 3px;
+    height: 220px;
+    width: 450px;
+  }
+  100% {
+    border-radius: 3px;
+    /*Hyde li 8ayrta kermel el calendar */
+    height: 440px;
+    width: 450px;
+  }
+}
+@keyframes killShot {
+  0% {
+    transform: translatey(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translatey(300px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes modalContentFadeIn {
+  0% {
+    opacity: 0;
+    top: -20px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@keyframes modalContentFadeOut {
+  0% {
+    opacity: 1;
+    top: 0px;
+  }
+  100% {
+    opacity: 0;
+    top: -20px;
+  }
+}
+@keyframes closeFadeIn {
+  0% {
+    opacity: 0;
+    top: -20px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@keyframes closeFadeOut {
+  0% {
+    opacity: 1;
+    top: 0px;
+  }
+  100% {
+    opacity: 0;
+    top: -20px;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0);
+  }
+}

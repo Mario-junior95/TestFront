@@ -1,0 +1,55 @@
+.MuiAppBar-colorPrimary {
+  color: #fff;
+  background-color: #2196f3 !important;
+  height: 5vw;
+}
+
+/* .makeStyles-drawerClose-11 {
+  width: 93px !important;
+} */
+
+.MuiButton-textPrimary {
+  color: red !important;
+}
+
+.MuiPaper-root > .MuiList-padding {
+  margin: 0 auto;
+}
+
+.MuiListItem-root > .MuiButtonBase-root > .MuiButton-label {
+  position: relative;
+  left: -0.2vw;
+}
+
+.MuiListItem-root > a > div > svg.MuiSvgIcon-root {
+  width: 3vw !important;
+  margin-top: 5px !important;
+  color: #2196f3;
+  margin-left: -3px;
+}
+
+.MuiList-padding > .MuiListItem-gutters {
+  padding-left: 35px;
+  padding-right: 16px;
+  padding-top: 4px;
+  line-height: 1.45;
+}
+
+.MuiList-root > .MuiListItem-root > a {
+  text-decoration: none;
+  color: #2196f3;
+  font-size: 20px;
+  text-align: center;
+}
+
+.MuiPaper-root > .MuiDialogTitle-root > .MuiTypography-root {
+  text-align: center;
+}
+
+.MuiDialogActions-root {
+  flex: 0 0 auto;
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  justify-content: center !important;
+}

@@ -1,0 +1,132 @@
+.cardBox {
+  float: left;
+  font-size: 1.2em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 40%;
+}
+
+.cardBox:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  /* background: #222; */
+  cursor: default;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  /* width: 100%; */
+  width: 30vw;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+  margin-top: 6vw;
+}
+
+.benefitsCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card p {
+  margin-bottom: 1.8em;
+}
+
+.card .front,
+.card .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.card .front strong {
+  background: #fff;
+  border-radius: 100%;
+  color: #222;
+  font-size: 1.5em;
+  line-height: 30px;
+  padding: 0 7px 4px 6px;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.workout{
+  height: 49vw !important;
+  background-color: black;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .card {
+    height: 285px;
+    margin-top: 23vw;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .card {
+    height: 100vw !important;
+  }
+
+  .benefitsCards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .card .back {
+    width: 58vw;
+    margin-left: -12vw;
+  }
+
+  .card .front {
+    margin-left: -35vw !important;
+    min-width: 100vw !important;
+  }
+
+  .workout{
+    margin-bottom: 20vw !important;
+  }
+
+
+  /* .copyrightWorkouts{
+    display: none !important;
+  } */
+}

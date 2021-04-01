@@ -1,0 +1,34 @@
+.label,
+.pagination > li > a {
+  color: black;
+}
+
+.pagination {
+  display: flex;
+  padding-bottom: 2vw;
+  margin-left: 39%;
+}
+
+.pagination > .page-item > .page-link {
+  color: white;
+  border: 1px white solid;
+  padding: 0 2vw;
+  margin-left: 0.4vw;
+}
+
+.pagination > .page-item > .page-item:focus,
+.pagination > .page-item > .page-item:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+
+@media only screen and (max-width: 480px) {
+.pagination > .page-item > .page-link {
+  color: white;
+  border: 1px white solid;
+  margin-left: 0vw !important;
+  position: relative;
+  left: -16vw !important;
+}
+}

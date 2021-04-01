@@ -1,0 +1,55 @@
+.Coaches_banner {
+  background-image: url("../../../Images/Coaches.jpg");
+  height: 100vh;
+  background-size: 100%;
+  width: 99vw;
+  background-attachment: fixed !important;
+}
+
+.containerCoaches {
+  width: 92vw;
+}
+
+.postionCoach:nth-child(1) {
+  margin-top: 8vw !important;
+}
+
+.postionCoach:nth-child(n + 1) {
+  margin-top: 37vw;
+  margin-left: 8vw;
+}
+
+.coachInfo {
+  text-align: center !important;
+  width: 36vw;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: white;
+  margin-bottom: 3vw;
+}
+
+@media only screen and (max-width: 480px) {
+  .Coaches_banner {
+    width: 140vw;
+    background-repeat: no-repeat;
+    height: 84vw;
+  }
+  .sectionCoaches {
+    display: flex;
+    flex-direction: column !important;
+    margin-left: 6.3vw !important;
+  }
+
+  .sectionCoaches > img {
+    width: 120vw !important;
+    margin: 22px 10vw;
+  }
+
+  .coachInfo p strong:nth-child(1) {
+    font-size: 4vw !important;
+  }
+
+  .coachPrice {
+    font-size: 7vw !important;
+  }
+}

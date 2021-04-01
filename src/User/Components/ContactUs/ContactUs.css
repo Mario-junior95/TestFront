@@ -1,0 +1,19 @@
+@media only screen and (max-width: 480px) {
+  .contactUs {
+    margin-top: 22vw !important;
+    height: 118vw !important;
+    margin-left: -31vw !important;
+  }
+
+  .contactUs > h1 {
+    font-size: 10vw !important;
+  }
+
+  .imgContactUs {
+    display: none;
+  }
+
+  .contactUs > div >  section {
+    height: 94vw !important;
+  }
+}

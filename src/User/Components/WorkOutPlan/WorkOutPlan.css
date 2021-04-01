@@ -1,0 +1,392 @@
+.WorkOut_banner {
+  background-image: url("../../../Images/Workout.jpg");
+  height: 100vh;
+  background-size: 100%;
+  width: 99vw;
+  background-attachment: fixed;
+}
+
+.containers {
+  /* margin-bottom: 10vw; */
+  margin-bottom: 1vw;
+}
+
+/** To Menu */
+
+.workplanMenu {
+  text-align: center;
+  margin-top: 6vw;
+  position: relative;
+  z-index: 6;
+}
+
+.workplanMenu > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 2vw;
+  font-size: 1em;
+}
+
+.workplanMenu > a:hover {
+  color: gray;
+}
+
+.block_section_1 {
+  display: flex;
+  align-content: center;
+  width: 89%;
+  margin: 0 auto;
+  margin-top: 2vw;
+  position: relative;
+  z-index: 2;
+}
+
+.block_section_2 {
+  display: flex;
+  align-content: center;
+  width: 89%;
+  margin: 0 auto;
+  margin-top: 8vw;
+}
+
+.paragraph {
+  /* font-size: 0.75rem; */
+  /* letter-spacing: 0.3rem; */
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: white;
+  text-align: justify !important;
+}
+
+.gym {
+  color: #fff;
+  font-size: 17vw;
+  font-family: Termina, Impact, Arial Black, sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+  text-transform: uppercase;
+  margin-left: 3px;
+  position: absolute;
+  top: 14.6vw;
+  z-index: 1;
+}
+
+.mma {
+  color: #fff;
+  font-size: 15vw;
+  font-family: Termina, Impact, Arial Black, sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+  text-transform: uppercase;
+  margin-left: 3px;
+  position: absolute;
+  margin-top: 12vw;
+  left: 51vw;
+  z-index: 1;
+}
+#mma,
+#cardio,
+#pool {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.aerobic {
+  color: #fff;
+  font-size: 9vw;
+  font-family: Termina, Impact, Arial Black, sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+  text-transform: uppercase;
+  margin-left: 3px;
+  position: absolute;
+  margin-top: 20vw;
+}
+
+.cardio {
+  color: #fff;
+  font-size: 11vw;
+  font-family: Termina, Impact, Arial Black, sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+  text-transform: uppercase;
+  margin-left: 3px;
+  position: absolute;
+  left: 44vw;
+  margin-top: 20vw;
+}
+
+.zumba {
+  color: #fff;
+  font-size: 9vw;
+  font-family: Termina, Impact, Arial Black, sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+  text-transform: uppercase;
+  margin-left: 3px;
+  position: absolute;
+  position: absolute;
+  margin-top: 20vw;
+}
+
+.pool {
+  color: #fff;
+  font-size: 14vw;
+  font-family: Termina, Impact, Arial Black, sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+  text-transform: uppercase;
+  margin-left: 3px;
+  position: absolute;
+  left: 48vw;
+  margin-top: 24vw;
+}
+
+@media only screen and (max-width: 480px) {
+  .WorkOut_banner {
+    width: 140vw;
+    background-repeat: no-repeat;
+    height: 84vw;
+  }
+
+  .workplanMenu {
+    display: none;
+  }
+  .block_section_1,
+  .block_section_2,
+  .block_section_3,
+  .block_section_4 {
+    display: flex;
+    flex-direction: column !important;
+    margin-bottom: 13vw !important;
+  }
+
+  .block_section_1 > .gym,
+  .block_section_2 .aerobic,
+  .block_section_2 .zumba {
+    margin-left: 40vw;
+    font-size: 17vw !important;
+  }
+
+  .block_section_1 > img,
+  .block_section_2 > img {
+    width: 91vw !important;
+    margin: 1vw 17vw !important;
+  }
+  .description {
+    text-align: center !important;
+  }
+
+  .zumba {
+    margin-top: 18vw !important;
+    margin-left: 27vw !important;
+  }
+  .WorkOut_banner {
+    background-image: url("../../../Images/Workout.jpg");
+    height: 100vh;
+    background-size: 100%;
+    width: 99vw;
+    background-attachment: fixed;
+  }
+
+  .containers {
+    /* margin-bottom: 10vw; */
+    margin-bottom: 1vw;
+  }
+
+  /** To Menu */
+
+  .workplanMenu {
+    text-align: center;
+    margin-top: 6vw;
+    position: relative;
+    z-index: 6;
+  }
+
+  .workplanMenu > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 2vw;
+    font-size: 1em;
+  }
+
+  .workplanMenu > a:hover {
+    color: gray;
+  }
+
+  .block_section_1 {
+    display: flex;
+    align-content: center;
+    width: 89%;
+    margin: 0 auto;
+    margin-top: 2vw;
+    position: relative;
+    z-index: 2;
+  }
+
+  .block_section_2 {
+    display: flex;
+    align-content: center;
+    width: 89%;
+    margin: 0 auto;
+    margin-top: 8vw;
+  }
+
+  .paragraph {
+    /* font-size: 0.75rem; */
+    /* letter-spacing: 0.3rem; */
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: white;
+    text-align: justify !important;
+  }
+
+  .gym {
+    color: #fff;
+    font-size: 17vw;
+    font-family: Termina, Impact, Arial Black, sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;
+    text-transform: uppercase;
+    margin-left: 3px;
+    position: absolute;
+    top: 14.6vw;
+    z-index: 1;
+  }
+
+  .mma {
+    color: #fff;
+    font-size: 15vw;
+    font-family: Termina, Impact, Arial Black, sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;
+    text-transform: uppercase;
+    margin-left: 3px;
+    position: absolute;
+    margin-top: 12vw;
+    left: 51vw;
+    z-index: 1;
+  }
+  #mma,
+  #cardio,
+  #pool {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .aerobic {
+    color: #fff;
+    font-size: 9vw;
+    font-family: Termina, Impact, Arial Black, sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;
+    text-transform: uppercase;
+    margin-left: 3px;
+    position: absolute;
+    margin-top: 20vw;
+  }
+
+  .cardio {
+    color: #fff;
+    font-size: 11vw;
+    font-family: Termina, Impact, Arial Black, sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;
+    text-transform: uppercase;
+    margin-left: 3px;
+    position: absolute;
+    left: 44vw;
+    margin-top: 20vw;
+  }
+
+  .zumba {
+    color: #fff;
+    font-size: 9vw;
+    font-family: Termina, Impact, Arial Black, sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;
+    text-transform: uppercase;
+    margin-left: 3px;
+    position: absolute;
+    position: absolute;
+    margin-top: 20vw;
+  }
+
+  .pool {
+    color: #fff;
+    font-size: 14vw;
+    font-family: Termina, Impact, Arial Black, sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;
+    text-transform: uppercase;
+    margin-left: 3px;
+    position: absolute;
+    left: 48vw;
+    margin-top: 24vw;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .WorkOut_banner {
+      width: 140vw;
+      background-repeat: no-repeat;
+      height: 84vw;
+    }
+
+    .workplanMenu {
+      display: none;
+    }
+    .block_section_1,
+    .block_section_2,
+    .block_section_3,
+    .block_section_4 {
+      display: flex;
+      flex-direction: column !important;
+      margin-bottom: 13vw !important;
+    }
+
+    .block_section_1 > .gym,
+    .block_section_2 .aerobic,
+    .block_section_2 .zumba {
+      margin-left: 40vw;
+      font-size: 17vw !important;
+    }
+
+    .block_section_1 > img,
+    .block_section_2 > img {
+      width: 91vw !important;
+      margin: 1vw 17vw !important;
+    }
+    .description {
+      text-align: center !important;
+    }
+
+    .zumba {
+      margin-top: 18vw !important;
+      margin-left: 27vw !important;
+    }
+
+    .aerobic {
+      margin-top: 13vw !important;
+      margin-left: 20vw !important;
+    }
+  }
+
+  .aerobic {
+    margin-top: 13vw !important;
+    margin-left: 20vw !important;
+  }
+}

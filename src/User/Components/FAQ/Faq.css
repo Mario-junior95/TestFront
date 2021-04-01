@@ -1,0 +1,106 @@
+.rc-collapse {
+  font-size: large;
+  line-height: 1.5em;
+  margin-top: 3vw;
+}
+
+.rc-collapse-header > .arrow {
+  visibility: hidden !important;
+}
+.my-header-class {
+  padding: 1.7% 0;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  background-color: rgba(225, 225, 225, 0.1);
+}
+
+.rc-collapse-header {
+  border: 1px white solid;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 65vw;
+  font-size: 20px;
+  background: black;
+  cursor: pointer;
+  margin: 1vw 0;
+  box-shadow: 0 2px 10px 0 rgba(95, 186, 233, 0.3);
+}
+
+.rc-collapse-content-box {
+  text-align: center;
+  padding: 2vw 0;
+  color: #a5a5a5;
+}
+
+.rc-collapse-header:after {
+  content: "+";
+  color: white;
+  font-size: xx-large;
+  float: right;
+  margin-right: 3%;
+}
+.rc-collapse-item-active .rc-collapse-header:after {
+  content: "-";
+  color: white;
+  font-size: xx-large;
+  float: right;
+  margin-right: 3%;
+  transition: transform 0.2s ease 0s;
+  transform: rotate(180deg);
+}
+
+/*Desktop View*/
+@media only screen and (min-width: 600px) {
+  .reviews {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .rc-collapse-item-active .rc-collapse-header:after {
+    font-size: 25px;
+    margin-top: -1px;
+  }
+  .rc-collapse-header:after {
+    font-size: 25px;
+  }
+
+  .reviews_odd {
+    background-color: rgba(225, 225, 225, 0.3);
+    border-radius: 2px;
+    text-align: center;
+    padding: 5% 0;
+    font-size: 20px;
+  }
+  .reviews_even {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 5% 0;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .faqTop > h1 {
+    margin-left: -29vw !important;
+  }
+  .faqTop {
+    margin-top: 19vw !important;
+  }
+  .faqTop > h1 > span {
+    font-size: 9vw !important;
+  }
+
+  .faqTop > h1 > span > sub {
+    font-size: 4vw !important;
+  }
+
+  .rc-collapse-header,
+  .rc-collapse-content-box {
+    width: 129vw !important;
+    margin-left: -33vw !important;
+    padding: 4vw 0;
+  }
+}

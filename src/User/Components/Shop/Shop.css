@@ -1,0 +1,93 @@
+.shoe {
+  display: block;
+  position: relative;
+  /* float: left; */
+  z-index: 2;
+  width: 11vw;
+  top: -3vw;
+  height: auto;
+  margin: 0 0 0 7vw;
+  overflow: hidden;
+  transform: translateZ(75px);
+  filter: drop-shadow(2px 2px 20px #222);
+}
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+}
+
+.content_item {
+  position: relative;
+  top: -2vw;
+  line-height: 0;
+}
+
+.button_shop {
+  background: transparent;
+  color: black;
+  border: 2px solid black;
+  font-size: 15px;
+  margin-left: 31px;
+  letter-spacing: 2px;
+  padding: 10px 0vw;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.4s;
+  font-family: Impact, Arial black, sans-serif;
+  width: 12em;
+  transform: translateZ(30px);
+}
+
+.button_shop:hover,
+.button_shop:focus {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 480px) {
+  .shop > h1 {
+    font-size: 9vw !important;
+    margin-left: -88vw !important;
+    margin-top: 22vw !important;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: 50% 50% !important;
+    margin-left: 18vw !important;
+  }
+  /* 
+  .items > div{
+    margin-left: 16vw !important;
+  } */
+
+  .shoe {
+    width: 18vw !important;
+  }
+
+  .button_shop {
+    position: relative;
+    top: -2vw !important;
+    left: -3vw !important;
+  }
+
+  .items > p {
+    margin-left: -21vw !important;
+    width: 32vw !important;
+    height: 54vw !important;
+  }
+
+  /*    FOR PAGINATION */
+  .pagination > .page-item > .page-link {
+    padding: 3px 3vw !important;
+    margin-left: -19.6vw !important;
+  }
+}
